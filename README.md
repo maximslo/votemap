@@ -5,8 +5,7 @@ Deployed: https://votemap.onrender.com/
 
 An autonomous solution that fights voter suppression and ensures secure ballots.
 
-![IMG_2684_2](https://github.com/maximslo/votemap/assets/93232189/7bb821f9-51de-4649-b082-3248349ec63c)
-![IMG_2770](https://github.com/maximslo/votemap/assets/93232189/8fd9a928-c566-4ce8-aaea-571f18f8be3a)
+<img src="https://github.com/maximslo/votemap/assets/93232189/7bb821f9-51de-4649-b082-3248349ec63c" width="200" />
 
 #### Key Fob
 Code enables the keyfob to communicate using infrared signals and UART (Universal Asynchronous Receiver-Transmitter), and also allows it to connect to a network via WiFi.
