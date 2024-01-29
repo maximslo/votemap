@@ -170,7 +170,7 @@
           }).then(function(response) {
             const range = response.result;
             if (range.values.length > 0) {
-              const voteData = range.values.map(row => ({
+                const voteData = range.values.map(row => ({
                 state: row[0],  // Assuming state names are in the first column
                 votes: row[1]   // Assuming vote counts are in the second column
               }));
@@ -205,8 +205,13 @@
         ]).then(function (data) {
           const [voteData, topojson] = data;
 
-          if (!voteData || !topojson) {
+          if (!voteData) {
             console.error("Data loading error");
+            return;
+          }
+
+          if (!topojson) {
+            console.error("topojson loading error");
             return;
           }
 
