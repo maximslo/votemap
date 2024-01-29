@@ -159,7 +159,7 @@
           if (isSignedIn) {
             readSpreadsheetData();
           } else {
-            // Handle sign-in, e.g., gapi.auth2.getAuthInstance().signIn();
+            gapi.auth2.getAuthInstance().signIn();
           }
         }
 
@@ -209,6 +209,8 @@
             console.error("Data loading error");
             return;
           }
+
+          console.log(voteData);
 
           if (!topojson) {
             console.error("topojson loading error");
